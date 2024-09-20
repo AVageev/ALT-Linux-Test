@@ -14,8 +14,8 @@ git clone https://github.com/AVageev/ALT-Linux-Test.git
 cd altlinux-test  
 pip install -r requirements.txt  
 sudo apt-get update  
-sudo apt-get install rpm python3-rpm 
-PYTHONPATH=$PYTHONPATH:$(pwd)/src 
+sudo apt-get install rpm python3-rpm  
+PYTHONPATH=$PYTHONPATH:$(pwd)/src  
 python3 src/cli/compare_packages.py --output result.json  
 
 This will create a result.json file containing the comparison results.  
